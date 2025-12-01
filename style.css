@@ -1,0 +1,43 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.reveal-content {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header {
+    transition: transform 0.4s ease-in-out, background-color 0.3s;
+}
+
+.header-hidden {
+    transform: translateY(-100%);
+}
+
+.header-visible {
+    transform: translateY(0);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #DC2626; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b91c1c; 
+}
